@@ -1,30 +1,7 @@
 #!/bin/sh
 
-# determine compiler options (check first if the environment
-# variable CPP_COMPILER is set):
-if [ ! -n "$CPP_COMPILER" ]; then
-  # base CPP_COMPILER on the current machine type:
-  case `uname -s` in
-	Linux)
-		CPP_COMPILER=g++
-		CPP_COMPILER_OPTIONS="-Wall -O3"
-		;;
-	AIX)
-		CPP_COMPILER=xlC
-		CPP_COMPILER_OPTIONS="-O"
-		;;
-	SunOS)
-		CPP_COMPILER=CC
-		CPP_COMPILER_OPTIONS="-O3"
-		;;
-	*)
-		# GNU's gcc is available on most systems...
-		C_COMPILER=gcc
-		C_COMPILER_OPTIONS="-Wall -O3"
-		;;
-    esac
-# else: CPP_COMPILER and CPP_COMPILER_OPTIONS are set in start-up file
-fi
+CPP_COMPILER=g++
+CPP_COMPILER_OPTIONS="-Wall -O3 -std=c++11"
 	
 files=`ls *.cxx`
 
