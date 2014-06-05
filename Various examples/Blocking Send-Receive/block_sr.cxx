@@ -18,7 +18,7 @@ int main (int argc, char **argv) {
 
     std::cout << "Hello, my rank is: " << myrank << "\n" << std::endl;
 
-    if( myrank == 0 )        /* Send a message */
+    if( myrank == 0 )
     {
         for (i=0;i<100;++i)
             a[i]=sqrt(i);

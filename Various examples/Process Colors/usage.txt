@@ -1,2 +1,2 @@
 mpicc -o ProcessColors ProcessColors.c
-mpirun -np 8 ProcessColors
+mpirun -np 8 ./ProcessColors
