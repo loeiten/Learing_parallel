@@ -1,1 +1,1 @@
-/home/michael/Desktop/Danmarks Tekniske Universitet/Parallel computing/Exercise 1 - Serial game of life/movie_game_of_life.py
+../Exercise 1 - Serial game of life/movie_game_of_life.py

@@ -1,1 +1,1 @@
-/home/michael/Desktop/Danmarks Tekniske Universitet/Parallel computing/make_scripts/make_g++11.sh
+../make_scripts/make_g++11.sh
